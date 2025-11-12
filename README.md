@@ -1,8 +1,21 @@
-# We The People's Voice — Starter
+# We The People — Web App (Vite + React)
 
-A minimal Vite + React app ready for Vercel.
+## Run locally
+```
+npm install
+npm run dev
+```
 
-**Vercel settings**
-- Build Command: `npm run build`
-- Output Directory: `dist`
-- Install Command: `npm install`
+## Build for production
+```
+npm run build
+```
+
+## Environment variables (set these on Vercel)
+- NEXT_PUBLIC_FIREBASE_API_KEY
+- NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+- NEXT_PUBLIC_FIREBASE_PROJECT_ID
+- NEXT_PUBLIC_FIREBASE_APP_ID
+- NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
