@@ -1,0 +1,28 @@
+:root {
+  --bg: #0f1a29; --text: #ffffff; --muted: rgba(255,255,255,0.7);
+  --panel: rgba(255,255,255,0.06); --border: rgba(255,255,255,0.12);
+  --green: #10b981; --red: #ef4444;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; background: var(--bg); color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+button { cursor: pointer; }
+.input, .textarea { width: 100%; padding: 10px 12px; background: rgba(255,255,255,0.1); border: 1px solid var(--border);
+  color: var(--text); border-radius: 10px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; }
+.badge { display:inline-block; padding: 4px 8px; border:1px solid var(--border); border-radius:10px; font-size:12px; color: var(--text); background: rgba(255,255,255,0.1); }
+.btn { padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); background: rgba(255,255,255,0.1); color: var(--text); }
+.btn:hover { background: rgba(255,255,255,0.2); }
+.btn-green { background: var(--green); border-color: transparent; } .btn-green:hover { opacity: 0.9; }
+.btn-red { background: var(--red); border-color: transparent; } .btn-red:hover { opacity: 0.9; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+.row { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 1024px) { .row-2 { grid-template-columns: 1fr 1fr; } .row-3 { grid-template-columns: 2fr 1fr; } }
+.header { position: sticky; top:0; backdrop-filter: blur(6px); border-bottom:1px solid var(--border); background: rgba(15,26,41,0.75); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; max-width:1100px; margin:0 auto; }
+.panel { background: var(--panel); border:1px solid var(--border); border-radius:16px; padding:20px; }
+.center { display:flex; align-items:center; justify-content:center; }
+.overlay { position:fixed; inset:0; background: rgba(0,0,0,0.7); display:grid; place-items:center; z-index: 50; }
+.aspect-video { position: relative; width:100%; padding-top: 56.25%; border-radius: 12px; border:1px solid var(--border); background: rgba(255,255,255,0.1); }
+.aspect-video > div { position:absolute; inset:0; display:grid; place-items:center; color: var(--muted); font-size: 14px; }
+.footer { color: rgba(255,255,255,0.6); font-size:12px; text-align:center; padding: 48px 16px; }
